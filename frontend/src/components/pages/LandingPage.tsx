@@ -3,7 +3,7 @@ import { ChangeEvent, useState } from "react";
 import { IHighRiskRecord, StdResponse } from "../../types";
 import axiosInstance from "../../services/axiosInstance";
 import AppTable from "../AppTable";
-import { HighRiskTableColumns } from "../../constants/tables";
+import { highRiskTableColumns } from "../../constants/tables";
 import toast from "react-hot-toast";
 import routes from "../../constants/routes";
 
@@ -78,7 +78,7 @@ const LandingPage = ({}: LandingPageProps) => {
       >
         Get High Risk Records
       </Button>
-      <AppTable rows={data} columns={HighRiskTableColumns} />
+      <AppTable rows={data} columns={highRiskTableColumns} />
     </Stack>
   );
 };

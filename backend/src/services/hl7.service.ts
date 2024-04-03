@@ -74,18 +74,20 @@ const getHighRiskRecords = async (
 
       acc.push({
         name: curr.name,
-        value: curr.value,
-        unit: curr.unit,
 
         diagnostic: diagnostic?.name,
         diagnosticGroup: diagnosticGroup?.name,
 
-        possibleConditions: possibleConditions
-          .map((condition) => condition.name)
-          .join(", "),
+        value: curr.value,
 
         standardLower,
         standardHigher,
+
+        unit: curr.unit,
+
+        possibleConditions: possibleConditions
+          .map((condition) => condition.name)
+          .join(", "),
       });
     }
     return acc;

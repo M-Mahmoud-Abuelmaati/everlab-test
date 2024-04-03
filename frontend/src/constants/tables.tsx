@@ -1,8 +1,8 @@
 import { GridColDef } from "@mui/x-data-grid";
 import { IHighRiskRecord } from "../types";
 
-export const HighRiskTableColumns: GridColDef<IHighRiskRecord>[] = [
-  { field: "name", headerName: "Name", flex: 1 },
+export const highRiskTableColumns: GridColDef<IHighRiskRecord>[] = [
+  { field: "name", headerName: "Name", minWidth: 250, flex: 1 },
 
   {
     field: "diagnostic",

@@ -42,14 +42,16 @@ export interface IOBXRecord {
 
 export interface IHighRiskRecord {
   name: string;
-  value: string;
-  unit: string;
 
   diagnostic?: string;
   diagnosticGroup?: string;
 
-  possibleConditions?: string;
+  value: string;
 
   standardLower: string | number;
   standardHigher: string | number;
+
+  unit: string;
+
+  possibleConditions?: string;
 }
