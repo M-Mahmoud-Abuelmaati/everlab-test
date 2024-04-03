@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "d2baa944-ebc5-4fff-9e46-416e6fa571b8",
+		"name": "Everlab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22166783"
+	},
+	"item": [
+		{
+			"name": "Get High Risk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "oruFile",
+							"type": "file",
+							"src": "/C:/Users/Mohamed/Desktop/everlab-takehome-test/frontend/files/MP826520.oru.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{HOST}}/hl7",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"hl7"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
